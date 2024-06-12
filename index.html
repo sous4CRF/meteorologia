@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estação Metorológica Automática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        .current-weather {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
+        .current-weather h2 {
+            margin-top: 0;
+        }
+        .weather-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .weather-details div {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            width: 48%;
+        }
+        .timeline {
+            margin-top: 20px;
+            overflow-x: scroll;
+            white-space: nowrap;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .timeline-item {
+            display: inline-block;
+            text-align: center;
+            margin-right: 20px;
+        }
+        .timeline-item:last-child {
+            margin-right: 0;
+        }
+        .timeline-item p {
+            margin: 5px 0;
+        }
+        .timeline-item .hour {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estação Meteorológica Automática</h1>
+    </header>
+    <div class="container">
+        <div class="current-weather">
+            <h2>Tempo Atual</h2>
+            <p>Local: Fátima, Campo Maior</p>
+            <p>Temperatura: 25°C</p>
+            <p>Condição: Sem registros de chuva</p>
+        </div>
+        <div class="weather-details">
+            <div>
+                <h3>Umidade do Ar</h3>
+                <p>65%</p>
+            </div>
+            <div>
+                <h3>Pressão Barométrica</h3>
+                <p>1013 hPa</p>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div>
+                <h3>Acumulado de Chuva (Diário)</h3>
+                <p>5 mm</p>
+            </div>
+            <div>
+                <h3>Mínima e Máxima (Últimas 24 horas)</h3>
+                <p>Mínima: 18°C</p>
+                <p>Máxima: 28°C</p>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <p class="hour">00:00</p>
+                <p>21°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">01:00</p>
+                <p>20°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">02:00</p>
+                <p>20°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">03:00</p>
+                <p>19°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">04:00</p>
+                <p>19°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">05:00</p>
+                <p>18°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">06:00</p>
+                <p>18°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">07:00</p>
+                <p>19°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">08:00</p>
+                <p>20°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">09:00</p>
+                <p>22°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">10:00</p>
+                <p>23°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">11:00</p>
+                <p>24°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">12:00</p>
+                <p>25°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">13:00</p>
+                <p>26°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">14:00</p>
+                <p>27°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">15:00</p>
+                <p>28°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">16:00</p>
+                <p>27°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">17:00</p>
+                <p>26°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">18:00</p>
+                <p>25°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">19:00</p>
+                <p>24°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">20:00</p>
+                <p>23°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">21:00</p>
+                <p>22°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">22:00</p>
+                <p>21°C</p>
+            </div>
+            <div class="timeline-item">
+                <p class="hour">23:00</p>
+                <p>21°C</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
